@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- BestROM AOSP 17 · peridot
+     Device reference: GuidixX 16.2 (same stack that built VoltageOS zip)
+     ROM reference: Pixelify-AOSP official peridot A17 (ASCP 6.0) patterns
+     Product: vendor/bestrom monochrome pure AOSP -->
+<manifest>
+  <remote name="gh" fetch="https://github.com/" />
+
+  <!-- BestROM product + docs -->
+  <project name="Mohithash/android_vendor_bestrom" path="vendor/bestrom" remote="gh" revision="17" />
+  <project name="Mohithash/bestrom-project" path="bestrom" remote="gh" revision="main" />
+
+  <!-- Device stack: GuidixX 16.2 (proven) -->
+  <project name="GuidixX/device_xiaomi_peridot" path="device/xiaomi/peridot" remote="gh" revision="16.2" />
+  <project name="GuidixX/vendor_xiaomi_peridot" path="vendor/xiaomi/peridot" remote="gh" revision="16.2" />
+  <project name="GuidixX/kernel_xiaomi_sm8635" path="kernel/xiaomi/sm8635" remote="gh" revision="16.2" />
+  <project name="GuidixX/kernel_xiaomi_sm8635-modules" path="kernel/xiaomi/sm8635-modules" remote="gh" revision="16.2" />
+  <project name="GuidixX/kernel_xiaomi_sm8635-devicetrees" path="kernel/xiaomi/sm8635-devicetrees" remote="gh" revision="16.2" />
+
+  <!-- Hardware Xiaomi: prefer VoltageOS A16 FCM/AIDL path we fixed, or Guidix/Lineage -->
+  <project name="VoltageOS/hardware_xiaomi" path="hardware/xiaomi" remote="gh" revision="16" />
+
+  <!-- QCOM / CAF (Lineage 22.2 / 23-ish mirrors for sm8650 family) -->
+<project name="LineageOS/android_hardware_qcom-caf_common"
+           path="hardware/qcom-caf/common" remote="gh" revision="lineage-22.2" />
+  <project name="LineageOS/android_hardware_qcom_wlan"
+           path="hardware/qcom-caf/wlan" remote="gh" revision="lineage-22.2-caf" />
+  <project name="LineageOS/android_hardware_qcom_bootctrl"
+           path="hardware/qcom-caf/bootctrl" remote="gh" revision="lineage-22.2-caf" />
+  <project name="LineageOS/android_hardware_qcom_thermal"
+           path="hardware/qcom-caf/thermal" remote="gh" revision="lineage-22.2" />
+  <project name="LineageOS/android_vendor_qcom_opensource_usb"
+           path="vendor/qcom/opensource/usb" remote="gh" revision="lineage-22.2" />
+  <project name="LineageOS/android_vendor_qcom_opensource_dataservices"
+           path="vendor/qcom/opensource/dataservices" remote="gh" revision="lineage-22.2" />
+  <project name="LineageOS/android_vendor_qcom_opensource_vibrator"
+           path="vendor/qcom/opensource/vibrator" remote="gh" revision="lineage-22.2" />
+
+
+
+
+  <!-- BestROM agent: CAF/display (public Lineage / Voltage-Peridot) -->
+
+
+
+  <!-- BestROM agent: CAF/display (public Lineage / Voltage-Peridot) -->
+
+
+
+  <!-- BestROM agent: CAF/display (public Lineage / Voltage-Peridot) -->
+
+
+
+  <!-- BestROM agent: CAF/display (public Lineage / Voltage-Peridot) -->
+
+
+
+  <!-- BestROM agent: CAF/display (public Lineage / Voltage-Peridot) -->
+
+
+
+  <!-- BestROM agent: CAF/display (public Lineage / Voltage-Peridot) -->
+
+
+
+  <!-- BestROM agent: CAF/display (public Lineage / Voltage-Peridot) -->
+  <project name="LineageOS/android_vendor_qcom_opensource_display-commonsys-intf"
+           path="vendor/qcom/opensource/commonsys-intf/display"
+           remote="gh" revision="lineage-23.2" />
+  <project name="LineageOS/android_vendor_qcom_opensource_display-commonsys"
+           path="vendor/qcom/opensource/commonsys/display"
+           remote="gh" revision="lineage-23.2" />
+  <project name="Voltage-Peridot/hardware_qcom-caf_sm8650_display"
+           path="hardware/qcom-caf/sm8650/display"
+           remote="gh" revision="16" />
+</manifest>
